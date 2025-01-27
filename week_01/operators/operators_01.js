@@ -16,7 +16,7 @@
 const a = 8; // Creating a variable a and assigning it an integer value 5
 const b = 3; // Creating a varialbe b and assigning it an integer value 3
 
-//2.
+//2 & 3.
 const sum = a + b; // Adding the values using a and b and storing the result in a variable 'sum'
 console.log("Sum of a and b is:", sum); // printing the results
 
