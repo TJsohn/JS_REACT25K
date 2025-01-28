@@ -6,6 +6,8 @@ Print both results using console.log().
 Example output:
 "First character: J"
 "Last character: t" */
+
 let word = "JavaScript";
+
 console.log(`First character: ${word[0]}`);
 console.log(`Last character: ${word[9]}`);

@@ -18,16 +18,16 @@ const b = 3; // Creating a varialbe b and assigning it an integer value 3
 
 //2 & 3.
 const sum = a + b; // Adding the values using a and b and storing the result in a variable 'sum'
-console.log("Sum of a and b is:", sum); // printing the results
+console.log("The sum of a and b is:", sum); // printing the results
 
-let subtract = a - b; // Substracting b from a and storing the result in a variable 'subtract'
-console.log("Subtract of a and b is:", subtract); // printing the results
+const difference = a - b; // Substracting b from a and storing the result in a variable 'difference'
+console.log("The difference of a and b is:", difference); // printing the results
 
-let multiply = a * b; // Storing the result in a variable "multiply" by multiplying a and b
-console.log("Multiply of a and b is:", multiply); // printing the result
+const product = a * b; // Storing the result in a variable "product" by multiplying a and b
+console.log("The product of a and b is:", product); // printing the result
 
-let divide = a / b; // Storing the result in a variable "divide" by dividing a by b
-console.log("Divide of a by b is:", divide); // printing the result
+const quotient = a / b; // Storing the result in a variable "quotient" by dividing a by b
+console.log("The quotient of a by b is:", quotient); // printing the result
 
-let remainder = a % b; // storing the result in a variable "remainder" of the remainder when a is divided by b
+const remainder = a % b; // storing the result in a variable "remainder" of the remainder when a is divided by b
 console.log("The remainder when a is divided by b is:", remainder); //printing the result

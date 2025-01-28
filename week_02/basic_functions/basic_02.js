@@ -11,6 +11,8 @@ console.log(isEven(4));
 console.log(isEven(7));*/
 
 const isEven = (num) => {
+  const result = num % 2;
+  console.log("Result: ", result);
   return num % 2 === 0;
 };
 

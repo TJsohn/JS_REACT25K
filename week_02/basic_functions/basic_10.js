@@ -7,7 +7,7 @@ Print the result using console.log().
 
 */
 const cleanAndTransform = (str) => {
-  return str.trim(), str.toLowerCase(), str.replace("powerful", "amazing");
+  return str.trim().toLowerCase().replace("powerful", "amazing");
 };
 
-console.log(cleanAndTransform("JavaScript is powerful!"));
+console.log(cleanAndTransform(" JavaScript is powerful! "));

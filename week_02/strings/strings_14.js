@@ -9,7 +9,9 @@ Example output:
 "Final description: javascript is fun and amazing!"
 "Does it include 'fun'? true"
  */
+
 let description = " JavaScript is Fun and powerful! ";
+
 let trimedDescription = description.trim();
 let lowercase = trimedDescription.toLowerCase();
 let replacedText = lowercase.replace("powerful", "amazing");

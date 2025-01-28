@@ -4,8 +4,8 @@ This is line two.
 This is line three.
 Print the multiLine variable using console.log(). 
 */
-let multiLineString = `This is line one.
+let multiLine = `This is line one.
 This is line two.
 This is line three.`;
 
-console.log(multiLineString);
+console.log(multiLine);

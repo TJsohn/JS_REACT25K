@@ -6,4 +6,5 @@
 let randomNum = Math.random() * 10;
 
 let roundedRandomNumber = Math.floor(randomNum);
+
 console.log(`Your random number is ${roundedRandomNumber}`);

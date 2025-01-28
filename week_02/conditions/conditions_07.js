@@ -10,7 +10,7 @@ Call the function with different animal names.
 */
 
 const getAnimalDescription = (favoriteAnimal) => {
-  switch (favoriteAnimal.toLowerCase()) {
+  switch (favoriteAnimal) {
     case "fox":
       return "Foxes are sly and smart!";
     case "dog":
