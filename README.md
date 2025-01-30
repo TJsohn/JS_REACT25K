@@ -14,4 +14,4 @@
 - **week_03:**
   - [x] github
   - [ ] loops
-  - [ ] 8_ball
+  - [x] 8_ball
