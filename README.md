@@ -13,5 +13,5 @@
   - [x] conditions
 - **week_03:**
   - [x] github
-  - [ ] loops
+  - [x] loops
   - [x] 8_ball

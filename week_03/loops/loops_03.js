@@ -10,11 +10,13 @@ const calculateAverageSpeed = () => {
   let time;
   let speed;
   while (distance !== 0) {
-    distance = Number(window.prompt("Enter a distance in kilometers: "));
+    distance = Number(prompt("Enter a distance in kilometers: "));
     if (distance === 0) {
       break;
     }
-    time = Number(window.prompt("Enter a time in hours: "));
+
+    time = Number(prompt("Enter a time in hours: "));
+
     speed = distance / time;
     console.log("The average speed is: ", speed);
   }

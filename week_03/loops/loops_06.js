@@ -9,19 +9,26 @@ Write a function named askToContinue:
 const askToContinue = () => {
   let sum = 0;
   let count = 0;
-  let number;
-  let answer;
+  let answer = "";
+
+  //let response;
 
   while (answer !== "n") {
-    number = prompt("Enter a number: ");
+    let number = Number(prompt("Enter a number: "));
 
     sum += number;
     count++;
 
     answer = prompt("Do you want to continue giving numbers? (y/n)");
-
     if (answer === "n") {
       break;
     }
+
+    if (answer !== "y") {
+      alert("Please enter a valid answer.");
+    }
   }
+  console.log("The average of all entered numbers:", sum / count);
 };
+
+askToContinue();
