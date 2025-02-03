@@ -14,26 +14,16 @@ Write a function named calculateAverageUntilZero:
 // 7: log the average
 
 const calculateAverageUntilZero = () => {
-  let sum = 0;
-  let count = 0;
-  let number;
-  //let array = [];
+  let sum = 0,
+    count = 0;
 
-  while (number !== 0) {
-    let input = Number(window.prompt("Enter a number (0 to stop): "));
-    sum += input;
+  while (true) {
+    let num = parseFloat(prompt("Enter a number (0 to stop):"));
+    if (num === 0) break;
+    sum += num;
     count++;
-
-    if (input === 0) {
-      let average = sum / (count - 1);
-      console.log("Average of entered numbers:", average);
-      break;
-    }
-    //sum += number;
-    //array.push(number);
   }
+  console.log(`Average: ${sum / count}`);
 };
-//console.log(sum / (array.length - 1));
-//};
 
 calculateAverageUntilZero();

@@ -10,7 +10,7 @@ const calculateAverageSpeed = () => {
   let time;
   let speed;
   while (distance !== 0) {
-    distance = Number(prompt("Enter a distance in kilometers: "));
+    distance = Number(prompt("Enter a distance in kilometers (0 to stop): "));
     if (distance === 0) {
       break;
     }

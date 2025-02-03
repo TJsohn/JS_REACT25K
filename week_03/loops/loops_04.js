@@ -13,9 +13,9 @@ Display the result in the console.
 
 const countEvenNumbers = () => {
   let count = 0;
-  for (i = 0; i < 20; i++) {
-    let number = Number(window.prompt("Enter a number: "));
-    if (number % 2 === 0) {
+  for (let i = 0; i < 20; i++) {
+    let num = Number(prompt("Enter a number: "));
+    if (num % 2 === 0) {
       count++;
     }
   }

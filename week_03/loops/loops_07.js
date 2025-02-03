@@ -14,7 +14,7 @@ const sumAndAverage = () => {
   let numbers = [];
 
   while (count < 10) {
-    let input = Number(prompt("Enter a number: "));
+    let input = parseFloat(prompt("Enter a number: "));
 
     sum += input;
     count++;

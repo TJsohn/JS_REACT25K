@@ -14,9 +14,9 @@ const askToContinue = () => {
   //let response;
 
   while (answer !== "n") {
-    let number = Number(prompt("Enter a number: "));
+    let num = parseFloat(prompt("Enter a number: "));
 
-    sum += number;
+    sum += num;
     count++;
 
     answer = prompt("Do you want to continue giving numbers? (y/n)");

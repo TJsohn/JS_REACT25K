@@ -9,14 +9,14 @@ Display the results in the console.
 */
 
 const findMinMax = () => {
-  let input = Number(prompt("How many numbers you want to input?"));
+  let input = parseInt(prompt("How many numbers you want to input?"));
   console.log(input);
 
   let count = 0;
   let numbers = [];
 
   while (count < input) {
-    let enteredNumber = Number(prompt("Enter a number."));
+    let enteredNumber = parseFloat(prompt("Enter a number."));
     count++;
     numbers.push(enteredNumber);
 
