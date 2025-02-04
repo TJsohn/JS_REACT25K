@@ -8,7 +8,7 @@ Write JavaScript to:
 - Change the background color to a random color when the button is clicked.
 - Update the paragraph’s text color to match the user’s input valu
 */
-function changeBGcolor() {
+function changeBGColor() {
   let x = Math.floor(Math.random() * 256);
   let y = Math.floor(Math.random() * 256);
   let z = Math.floor(Math.random() * 256);
@@ -22,4 +22,6 @@ function changeBGcolor() {
   document.body.style.background = bgColor;
 }
 
-changeBGcolor();
+changeBGColor();
+
+function changeTextColor() {}
