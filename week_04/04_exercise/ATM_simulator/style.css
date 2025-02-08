@@ -1,0 +1,41 @@
+section {
+  font-family: "Rubik", serif;
+  margin: 10px;
+  padding: 10px;
+}
+
+#deposit {
+  margin: 10px;
+  padding: 10px;
+  background-color: lemonchiffon;
+}
+
+#deposit-btn {
+  margin-left: 5px;
+  padding: 10px;
+  font-size: 14px;
+  background-color: skyblue;
+}
+
+#withdraw {
+  margin-left: 50px;
+  padding: 10px;
+  background-color: lemonchiffon;
+}
+
+#withdraw-btn {
+  margin-left: 15px;
+  padding: 10px;
+  font-size: 14px;
+  background-color: orange;
+}
+
+#message {
+  font-color: ;
+}
+
+input {
+  display: block;
+  text-align: center;
+  margin: auto;
+}

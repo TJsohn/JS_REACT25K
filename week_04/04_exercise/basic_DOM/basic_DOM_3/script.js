@@ -5,9 +5,19 @@ Write JavaScript to:
 - Use the input event for real-time updates.
 */
 
+const inputField = document.getElementById("inputField");
+const displayText = document.getElementById("displayText");
+
+const updateDisplayText = () => {
+  displayText.innerText = inputField.value;
+};
+
+inputField.addEventListener("input", updateDisplayText);
+
+/*
 function showLiveText(event) {
   document.getElementById("displayText").textContent =
     "You typed: " + event.target.value;
 }
 
-document.getElementById("inputText").addEventListener("input", showLiveText);
+document.getElementById("inputText").addEventListener("input", showLiveText); */
