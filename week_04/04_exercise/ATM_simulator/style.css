@@ -1,7 +1,37 @@
 section {
-  font-family: "Rubik", serif;
   margin: 10px;
   padding: 10px;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  height: 100%;
+  margin-top: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  width: 20%;
+  height: 200%;
+  padding: 30px;
+  border: 2px solid #ccc;
+  background-color: mediumseagreen;
+}
+
+.pinLogin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+label {
+  display: block;
+}
+
+#account {
+  display: none;
 }
 
 #deposit {
@@ -11,27 +41,31 @@ section {
 }
 
 #deposit-btn {
-  margin-left: 5px;
+  margin: 10px;
   padding: 10px;
-  font-size: 14px;
   background-color: skyblue;
 }
 
 #withdraw {
-  margin-left: 50px;
+  margin: 10px;
   padding: 10px;
   background-color: lemonchiffon;
 }
 
 #withdraw-btn {
-  margin-left: 15px;
+  margin: 10px;
   padding: 10px;
-  font-size: 14px;
   background-color: orange;
 }
 
+#balance {
+  align-items: center;
+  color: whitesmoke;
+}
+
 #message {
-  font-color: ;
+  align-items: center;
+  color: white;
 }
 
 input {

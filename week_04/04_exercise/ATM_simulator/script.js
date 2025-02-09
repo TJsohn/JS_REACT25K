@@ -1,5 +1,26 @@
 //console.log("page loaded");
 
+document.getElementById("login").onclick = () => {
+  document.getElementById("pin").areaSelected();
+};
+
+const account = document.getElementById("account");
+const toggleBtn = document.getElementById("login");
+const pinInput = document.getElementById("pin");
+
+const correntPin = "1234";
+
+toggleBtn.addEventListener("click", () => {
+  if (pin.value === correntPin) {
+    account.style.display =
+      account.style.display === "none" || account.style.display === ""
+        ? "block"
+        : "none";
+  } else {
+    alert("Incorrect PIN");
+  }
+});
+
 const depositBtn = document.getElementById("deposit-btn");
 const withdrawBtn = document.getElementById("withdraw-btn");
 const balance = document.getElementById("balance");

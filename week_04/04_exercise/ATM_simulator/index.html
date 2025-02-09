@@ -13,14 +13,28 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section>
-      <h1 id="balance">0</h1>
-      <input id="deposit" type="number" placeholder="Deposit amount" />
-      <button id="deposit-btn">Deposit</button>
-      <input id="withdraw" type="number" placeholder="Withdraw amount" />
-      <button id="withdraw-btn">Withdraw</button>
-      <p id="message"></p>
-    </section>
+    <div class="form-container">
+      <div class="pinLogin">
+        <label for="pin">PIN: </label>
+        <input
+          type="password"
+          id="pin"
+          inputmode="numeric"
+          placeholder="Enter your PIN"
+        />
+        <button id="login">Log In</button>
+      </div>
+
+      <section id="account">
+        <h1 id="balance">Balance: 0</h1>
+        <input id="deposit" type="number" placeholder="Deposit amount" />
+        <button id="deposit-btn">Deposit</button>
+        <input id="withdraw" type="number" placeholder="Withdraw amount" />
+        <button id="withdraw-btn">Withdraw</button>
+        <p id="message"></p>
+      </section>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
