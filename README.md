@@ -17,5 +17,5 @@
   - [x] 8_ball
 - **week_04:**
   - [x] basic_DOM
-  - [ ] ATM_simulator
+  - [x] ATM_simulator
   - [ ] pancake_maker
