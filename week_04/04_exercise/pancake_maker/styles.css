@@ -59,7 +59,7 @@ body {
 
 h2 {
   font-weight: bolder;
-  font-size: 45px;
+  font-size: 40px;
 }
 
 h3 {
@@ -74,4 +74,21 @@ select,
 label {
   display: block;
   margin-top: 10px;
+  font-size: 18.72px;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.blink {
+  animation: blink 0.3s ease-in-out 2;
 }

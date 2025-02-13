@@ -18,4 +18,8 @@
 - **week_04:**
   - [x] basic_DOM
   - [x] ATM_simulator
-  - [ ] pancake_maker
+  - [x] ATM_simulator
+  - [x] pancake_maker
+- **week_05:**
+  - [ ] array
+  - [ ] pancake_maker_2
