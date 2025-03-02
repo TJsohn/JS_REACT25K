@@ -23,3 +23,6 @@
 - **week_05:**
   - [ ] array
   - [ ] pancake_maker_2
+- **week_06:**
+  - [ ] little_zoo
+  - [ ] objects

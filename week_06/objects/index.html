@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Objects_03</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Toggle Theme</h1>
+      <button id="theme-toggle">Switch to Dark Theme</button>
+      <p id="counter-value">0</p>
+      <button id="increase-btn">Increase</button>
+      <button id="decrease-btn">Decrease</button>
+
+      <h1>Product Purchase</h1>
+      <p>Product: <span id="product-name">Cake</span></p>
+      <p>Price: €<span id="product-price">10</span></p>
+      <label for="purchase-quantity">Enter Quantity: </label>
+      <input type="number" id="purchase-quantity" min="1" value="1" />
+
+      <p>Total Price: €<span id="total-price">0</span></p>
+      <p id="message"></p>
+
+      <h1>Tasks</h1>
+      <div class="task-input">
+        <input type="text" id="task-title" placeholder="Task Title" />
+        <input
+          type="text"
+          id="task-description"
+          placeholder="Task Description"
+        />
+        <button id="add-task-btn">Add Task</button>
+      </div>
+
+      <div id="task-list"></div>
+    </div>
+    <script src="objects_03.js"></script>
+  </body>
+</html>
