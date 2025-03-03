@@ -231,6 +231,8 @@ Use splice to remove "30" and replace it with "25" and "27".
 Expected outcome: [10, 20, 25, 27, 40, 50]
 */
 // Write your code here
+numbers.splice(1, 2, 25, 27);
+console.log(numbers);
 
 // Exercise 19: Increase each price by 10% using `map`
 let prices = [5, 10, 15, 20];
@@ -240,6 +242,8 @@ Create a new array where each price is increased by 10%.
 Expected outcome: [5.5, 11, 16.5, 22]
 */
 // Write your function here
+const increasedPrices = prices.map((price) => price * 1.1);
+console.log(increasedPrices);
 
 // Exercise 20: Filter words longer than 5 letters using `filter`
 let words = ["apple", "banana", "cherry", "kiwi", "strawberry"];
@@ -249,3 +253,6 @@ Create a new array containing only words longer than 5 letters from the words ar
 Expected outcome: ['banana', 'cherry', 'strawberry']
 */
 // Write your function here
+const longWords = words.filter((word) => word.length > 5);
+
+console.log(longWords);
