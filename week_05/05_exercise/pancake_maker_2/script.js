@@ -8,8 +8,7 @@ const seeOrderButton = document.getElementById("seeOrder");
 const summaryText = document.querySelector("#summaryText");
 const customerName = document.querySelector("#customerName");
 
-const changeHandler = (event) => {
-  console.log("Event: ", event);
+const changeHandler = () => {
   const basePrice = parseFloat(
     document.getElementById("type").selectedOptions[0].dataset.price
   );
@@ -23,7 +22,6 @@ const changeHandler = (event) => {
     0
   );
 
-  let deliveryFee = 0;
   const deliveryChecked = document.querySelector(".delivery:checked");
   if (deliveryChecked) {
     deliveryFee = parseFloat(deliveryChecked.dataset.price);
@@ -54,22 +52,36 @@ const changeHandler = (event) => {
 
 pancakeForm.addEventListener("change", changeHandler);
 
-seeOrderButton.addEventListener("click", () => {
-  const deliveryChecked = document.querySelector('[name="delivery"]:checked');
-  const deliveryFee = deliveryChecked ? deliveryChecked.dataset.price : "0";
+const getToppings = () => {
+  const selectedToppings = document.querySelectorAll(".topping:checked");
 
-  const selectedToppings = [...document.querySelectorAll(".topping:checked")]
-    .map((topping) => topping.value)
-    .join(", ");
+  const toppingList = [];
 
-  const selectedExtras = [...document.querySelectorAll(".extra:checked")]
-    .map((extra) => extra.value)
-    .join(", ");
+  selectedToppings.forEach((element) => {
+    toppingList.push(element.parentElement.innerText.trim());
+  });
+  return toppingList.join(", ");
+};
 
-  const toppingsText = selectedToppings
-    ? `with ${selectedToppings}`
-    : "with no toppings";
-  const extrasText = selectedExtras ? `and ${selectedExtras}` : "and no extras";
+const getExtras = () => {
+  const selectedExtras = document.querySelectorAll(".extra:checked");
 
-  summaryText.textContent = `Order created by ${customerName.value} for ${pancakeType.value} ${toppingsText} ${extrasText}. Delivery fee: ${deliveryFee}€`;
-});
+  const extraList = [];
+
+  selectedExtras.forEach((element) => {
+    extraList.push(element.parentElement.innerText.trim());
+  });
+  return extraList.join(", ");
+};
+
+const seeOrderClickHandler = () => {
+  const toppings = getToppings();
+  const extras = getExtras();
+
+  const [formattedPancakeType] = pancakeType.value.split(" - ");
+  const [formattedSelectedExtras] = extras.split(" - ");
+
+  summaryText.textContent = `Order created by ${customerName.value}: ${formattedPancakeType} pancake with ${toppings}, ${formattedSelectedExtras}. Delivery fee: ${deliveryFee}€`;
+};
+
+seeOrderButton.addEventListener("click", seeOrderClickHandler);
