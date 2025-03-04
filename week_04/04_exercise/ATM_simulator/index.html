@@ -3,36 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>ATM Simulator</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="form-container">
-      <div class="pinLogin">
-        <label for="pin">PIN: </label>
+    <div class="container">
+      <h1>ATM Simulator</h1>
+      <h2>Balance: <span id="balance">0</span> €</h2>
+
+      <div class="transaction">
         <input
-          type="password"
-          id="pin"
-          inputmode="numeric"
-          placeholder="Enter your PIN"
+          type="number"
+          class="depositInput"
+          placeholder="Enter deposit amount"
         />
-        <button id="login">Log In</button>
+        <button class="depositBtn">Deposit</button>
       </div>
 
-      <section id="account">
-        <h1 id="balance">Balance: 0</h1>
-        <input id="deposit" type="number" placeholder="Deposit amount" />
-        <button id="deposit-btn">Deposit</button>
-        <input id="withdraw" type="number" placeholder="Withdraw amount" />
-        <button id="withdraw-btn">Withdraw</button>
-        <p id="message"></p>
-      </section>
+      <div class="transaction">
+        <input
+          type="number"
+          class="withdrawInput"
+          placeholder="Enter withdraw amount"
+        />
+        <button class="withdrawBtn">Withdraw</button>
+      </div>
+      <p class="message"></p>
     </div>
 
     <script src="script.js"></script>

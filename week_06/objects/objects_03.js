@@ -175,16 +175,25 @@ Create an object `weatherApp` with a method `fetchWeather(city)`.
 Use `fetch` to get weather data from an API and display it in an HTML element.
 (API: OpenWeather or any free weather API)
 */
+const weatherApp =
+  // Your code here
 
-// Your code here
-
-/* Task 8
+  /* Task 8
 Create a constructor function `Car` that takes `brand`, `model`, and `year`.
 In the constructor, add a method `age()` that calculates the car’s age.
 Instantiate a new `Car` and display its age on the webpage.
 */
 
-// Your code here
+  // Your code here
+  class Car {
+    constructor(brand, model, year) {
+      this.brand = brand;
+      this.model = model;
+      this.year = year;
+    }
+
+    age(car) {}
+  };
 
 /* Task 9
 Create an array `users` where each user has `name` and `score`.
@@ -192,6 +201,12 @@ Add a button in HTML that sorts the users by score in descending order and updat
 */
 
 // Your code here
+const users = [
+  { name: "TJ", score: 69 },
+  { name: "Steve", score: 97 },
+  { name: "Jay", score: 89 },
+  { name: "Lora", score: 79 },
+];
 
 /* Task 10
 Create an object `shoppingList` with an array `items`.
