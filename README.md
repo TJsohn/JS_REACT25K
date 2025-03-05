@@ -26,3 +26,7 @@
 - **week_06:**
   - [ ] little_zoo
   - [ ] objects
+- **week_07:**
+  - [x] JSON
+  - [ ] localstorage
+  - [ ] pancake_maker_3
