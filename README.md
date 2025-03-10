@@ -23,7 +23,7 @@
   - [x] array
   - [x] pancake_maker_2
 - **week_06:**
-  - [ ] little_zoo
+  - [x] little_zoo
   - [ ] objects
 - **week_07:**
   - [x] JSON
