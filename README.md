@@ -27,5 +27,5 @@
   - [ ] objects
 - **week_07:**
   - [x] JSON
-  - [ ] localstorage
+  - [x] localstorage
   - [ ] pancake_maker_3
