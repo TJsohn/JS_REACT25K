@@ -8,13 +8,15 @@
   </head>
   <body>
     <div class="container">
-      <h1>Toggle Theme</h1>
+      <h2>Task 3-Toggle Theme</h2>
       <button id="theme-toggle">Switch to Dark Theme</button>
+
+      <h2>Task 4-Value Change</h2>
       <p id="counter-value">0</p>
       <button id="increase-btn">Increase</button>
       <button id="decrease-btn">Decrease</button>
 
-      <h1>Product Purchase</h1>
+      <h2>Task 5-Product Purchase</h2>
       <p>Product: <span id="product-name">Cake</span></p>
       <p>Price: €<span id="product-price">10</span></p>
       <label for="purchase-quantity">Enter Quantity: </label>
@@ -23,19 +25,57 @@
       <p>Total Price: €<span id="total-price">0</span></p>
       <p id="message"></p>
 
-      <h1>Task 6-Tasks</h1>
-      <div class="task-input">
-        <input type="text" id="task-title" placeholder="Task Title" />
-        <input
-          type="text"
-          id="task-description"
-          placeholder="Task Description"
-        />
-        <button id="add-task-btn">Add Task</button>
+      <h2>Task 6-Tasks</h2>
+      <button id="addTaskBtn">Add Task</button>
+
+      <h2>Task 7-Weathter App</h2>
+      <div id="weather-result">
+        <p id="error-message"></p>
+        <h3 id="city-name"></h3>
+        <p id="temperature"></p>
+        <p id="description"></p>
+        <p id="humidity"></p>
+        <input type="text" id="city" placeholder="Enter city" />
+        <button id="weatherBtn">Get Weather</button>
+        <div id="weatherInformation"></div>
       </div>
 
-      <div id="task-list"></div>
+      <h2>Task 8-Car</h2>
+      <p id="car-age"></p>
+
+      <h2>Task 9-Users List</h2>
+      <ul id="userList"></ul>
+      <button id="sortingButton">Sort Users</button>
+      <ul></ul>
+
+      <h2>Task 10-Shopping List</h2>
+      <input type="text" id="newItem" placeholder="Enter item" />
+      <button id="addItemBtn">Add Item</button>
+      <ul id="shoppingList"></ul>
+
+      <h2>Task 11-Post likes</h2>
+      <ul id="posts"></ul>
+
+      <h2>Task 13-Timer</h2>
+      <span id="timer"></span>
+
+      <h2>Task 14-Books</h2>
+      <form id="book-form">
+        <input type="text" id="title" placeholder="Title" required />
+        <input type="text" id="author" placeholder="Author" required />
+        <input type="number" id="pages" placeholder="Pages" required />
+        <button type="submit">Add Book</button>
+      </form>
+
+      <h3>Books:</h3>
+      <div id="library"></div>
     </div>
+
+    <h2>Task 15-Fox Tracker</h2>
+    <input type="text" id="foxName" placeholder="Enter fox name" />
+    <input type="text" id="foxLocation" placeholder="Enter location" />
+    <button id="addFox">Add Fox</button>
+    <ul id="foxList"></ul>
 
     <script src="objects_03.js"></script>
   </body>
