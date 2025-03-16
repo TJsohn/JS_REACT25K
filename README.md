@@ -28,7 +28,7 @@
 - **week_07:**
   - [x] JSON
   - [x] localstorage
-  - [ ] pancake_maker_3
+  - [x] pancake_maker_3
 - **week_08:**
   - [ ] js-writing-practices
   - [ ] error-handling
