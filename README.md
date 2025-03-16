@@ -30,6 +30,6 @@
   - [x] localstorage
   - [x] pancake_maker_3
 - **week_08:**
-  - [ ] js-writing-practices
+  - [x] js-writing-practices
   - [ ] error-handling
   - [x] fault-finding
