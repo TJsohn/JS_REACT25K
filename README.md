@@ -36,4 +36,4 @@
 - **week_09:**
   - [x] destructuring
   - [x] spread-rest
-  - [ ]
+  - [x] chaining
