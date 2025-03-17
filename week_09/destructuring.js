@@ -37,7 +37,7 @@ const {
 } = user;
 console.log(username, email); // Expected: "john_doe john@example.com"
 
-/* Task 4: Add Default Values  - ? 
+/* Task 4: Add Default Values 
 Modify the function so that if `role` is missing, it defaults to `"guest"`.  
 */
 
