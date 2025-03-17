@@ -33,3 +33,5 @@
   - [x] js-writing-practices
   - [ ] error-handling
   - [x] fault-finding
+- **week_09:**
+  - [x] destructuring
