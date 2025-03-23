@@ -31,9 +31,10 @@
   - [x] pancake_maker_3
 - **week_08:**
   - [x] js-writing-practices
-  - [ ] error-handling
+  - [x] error-handling
   - [x] fault-finding
 - **week_09:**
   - [x] destructuring
   - [x] spread-rest
   - [x] chaining
+  - [ ] async
