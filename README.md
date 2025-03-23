@@ -37,4 +37,4 @@
   - [x] destructuring
   - [x] spread-rest
   - [x] chaining
-  - [ ] async
+  - [x] async
