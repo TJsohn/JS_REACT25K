@@ -6,9 +6,6 @@ Print the results using console.log().
 
 Bonus: Modify the function to use implicit return. 
 */
-/* const isEven = (num) => num % 2 === 0;
-console.log(isEven(4));
-console.log(isEven(7));*/
 
 const isEven = (num) => {
   const result = num % 2;
