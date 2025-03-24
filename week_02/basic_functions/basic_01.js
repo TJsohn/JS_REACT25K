@@ -6,13 +6,6 @@ Print the result using console.log().
 
 Bonus: Call the function multiple times with different arguments and print all the results.
 */
-/* function add(a, b) {
-  return a + b;
-}
-console.log(add(10, 5));
-console.log(add(12, 3));
-console.log(add(1, 4));
-console.log(add(123123123, 1231231231));*/
 
 const add = (a, b) => {
   return a + b;
@@ -23,3 +16,4 @@ console.log(result);
 
 console.log("Added: ", add(4, 5)); //9
 console.log("Added: ", add(6, 2)); //8
+console.log("Added: ", add(3, 7));
