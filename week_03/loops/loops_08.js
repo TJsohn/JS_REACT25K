@@ -8,6 +8,8 @@ Write a function named findMinMax:
 Display the results in the console. 
 */
 
+//Check from index.html live server!
+
 const findMinMax = () => {
   let input = parseInt(prompt("How many numbers you want to input?"));
   console.log(input);
