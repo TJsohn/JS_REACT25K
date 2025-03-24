@@ -5,22 +5,13 @@ Write a function named countEvenNumbers:
 Display the result in the console. 
 */
 
-// step 1: Initialise a variable to store the count of even numbers.
-// step 2: Use a loop to prompt the user to input 20 numbers one by one
-// step 3: Check if the number is even
-// step 4: If it is even, increment the count
-// step 5: Log the count of even numbers.
-
-const countEvenNumbers = () => {
+function countEvenNumbers() {
   let count = 0;
   for (let i = 0; i < 20; i++) {
-    let num = Number(prompt("Enter a number: "));
-    if (num % 2 === 0) {
-      count++;
-    }
+    let num = parseInt(prompt("Enter a number:"));
+    if (num % 2 === 0) count++;
   }
-  console.log("The number of even numbers is: ", count);
-  //alert("The count of even numbers: ", count);
-};
+  console.log(`Total even numbers: ${count}`);
+}
 
 countEvenNumbers();
