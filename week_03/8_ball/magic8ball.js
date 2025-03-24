@@ -2,9 +2,6 @@ const magic8Ball = () => {
   let question = prompt("Ask me a yes or no question:");
   console.log("Question asked: " + question);
 
-  //UseMath.random() to generate a random number between 1 and8.
-  //UseMath.floor() to ensure the number is a whole number.
-
   let randomNumber = Math.floor(Math.random() * 8) + 1;
 
   let answer;
