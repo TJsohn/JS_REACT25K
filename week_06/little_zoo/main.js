@@ -14,20 +14,6 @@ const filterType = document.querySelector("#filterType");
 const searchInput = document.querySelector("#searchAnimal");
 const sortButton = document.querySelector("#sortAnimals");
 
-/*function displayAnimals(animals) {
-  const listElement = document.getElementById("animalList");
-  listElement.innerHTML = "";
-
-  animals.forEach((animal) => {
-    const li = document.createElement("li");
-    li.textContent = `${animal.name} (${animal.type})`;
-    listElement.appendChild(li);
-  });
-}
-
-displayAnimals(animals);
-*/
-
 const displayAnimals = (animalArray) => {
   animalList.innerHTML = "";
 
