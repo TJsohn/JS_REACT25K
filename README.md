@@ -1,6 +1,10 @@
 # JavaScript Tasks - REACT25K
 
+Welcome to the JavaScript Programming Course Tasks repository! This repository contains all the tasks I've solved during the 1st term at REACT25K course of Business College Helsinki.
+
 ## Completed Tasks
+
+Find task lists and progress tracking below.
 
 - **week_01**
   - [x] data_types
