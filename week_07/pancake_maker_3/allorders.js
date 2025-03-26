@@ -41,7 +41,12 @@ function loadOrders() {
     return;
   }
 
-  filteredOrders.forEach((order) => {
+  const sortedOrders = filteredOrders.sort((a, b) => {
+    const statusOrder = { waiting: 0, ready: 1, delivered: 2 };
+    return statusOrder[a.status] - statusOrder[b.status];
+  });
+
+  sortedOrders.forEach((order) => {
     let orderCard = document.createElement("div");
 
     const orderStatus = order.status || "waiting";
@@ -58,9 +63,9 @@ function loadOrders() {
     );
     const extras = createParagraph(
       "Extras",
-      Array.isArray(order.extras) && order.extras.length > 0
+      order.extras && Array.isArray(order.extras) && order.extras.length > 0
         ? order.extras.join(", ")
-        : "None"
+        : order.extras || "None"
     );
 
     const delivery = createParagraph("Delivery", order.deliveryMethod);
